@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 100dvw;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+    background-color: aquamarine;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 20px;
+}
+
+.c {
+    position: relative;
+    top:  250px;
+}
