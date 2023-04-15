@@ -61,6 +61,7 @@ body {
     left: 1rem;
     border: solid 1px black;
     font-family: 'Playfair Display', serif;
+    overflow: hidden;
 }
 
 .special {
@@ -68,15 +69,23 @@ body {
     top: 200px;
 }
 
+.container {
+    display: flex;
+    width: 100%;
+    gap: 200px;
+}
+
+
 .contentBox > p{
     font-size: 1.2rem;
     font-weight: 500;
 }
 
 .contentBox > h1 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 600;
     display: flex;
+    margin: 10px 0px;
 }
 
 .green {
@@ -85,5 +94,5 @@ body {
     background-color: green;
     position: relative;
     top: 150px;
-    left : 50px;
+    left: 50px;
 }
