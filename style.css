@@ -1,21 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    color: black;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     max-width: 100dvw;
     height: 100vh;
-    flex-direction: column;
+    overflow-x: hidden;
 }
 
 .box {
     height: 50px;
     width: 50px;
-    background-color: aquamarine;
+    background-color: rgb(180, 202, 195);
     margin: 1rem;
     display: flex;
     align-items: center;
@@ -27,4 +34,56 @@ body {
 .c {
     position: relative;
     top:  250px;
+}
+
+.container {
+    height: 50px;
+    width: 100dvw;
+    position: relative;
+}
+
+.elementSection {
+    position: absolute;
+    display: flex;
+    width: 100dvw;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px black;
+}
+
+.contentBox {
+    position: relative; 
+    height: 500px;
+    width: 90dvw;
+    top: 1.5rem;
+    margin-top: 20px;
+    left: 1rem;
+    border: solid 1px black;
+    font-family: 'Playfair Display', serif;
+}
+
+.special {
+    position: relative;
+    top: 200px;
+}
+
+.contentBox > p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.contentBox > h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: flex;
+}
+
+.green {
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    position: relative;
+    top: 150px;
+    left : 50px;
 }

@@ -1,13 +1,11 @@
-var aniBase = gsap.timeline({
-    defaults: {x: 500, rotate: 360, duration: 2}
-})
+gsap.registerPlugin(ScrollTrigger);
 
-aniBase.to(".article", {ease: "power1.out"})
-.to(".b", {ease: "power1.out"}, ">")
-
-gsap.to(".c", {
-    x: 300,
-    ease: "power1.out",
-    duration: 10,
-    ScrollTrigger: ".c",
-})
+  gsap.to(".green", { 
+    rotation: 900,
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.boxe',
+      scrub: 2,
+      markers: true,
+    }
+  });
